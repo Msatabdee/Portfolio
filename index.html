@@ -1,31 +1,237 @@
 <!doctype html>
-<html lang="en" ng-app="NarrowItDownApp">
-  <head>
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-	<script src='angular.min.js'></script>
-	<script src='app.js'></script>
-  </head>
-<body>
-   <div class="container" ng-controller='NarrowItDownController as list'>
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+<html lang="en-US" class=" js">
+<!--
+*     This website is 100% hand-coded from scratch,
+*     all code and files are static, server + browser cached,
+*     minified and compressed for best performance.
+-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is my online portfolio">
+		<meta name="keywords" content="Satabdee Mohapatra,HTML5,CSS3,XML,JavaScript,freelancer,web developer,responsive,apps,website developer">
+		<meta name="author" content="Satabdee Mohapatra">
+		<title>Satabdee Mohapatra - Portfolio</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	</head>
+	<body class="" cz-shortcut-listen="true">
+		<div class="wrapper">
+			<div class="container-fluid">
+				
+				<div class="header navbar opaque-navbar navbar-inverse navbar-fixed-top">
+					
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<nav id="collapsable-nav" class="collapse navbar-collapse">
+						<a id="home" class="nav-list zoom" href="#page1">Home</a>
+						<a id="skills" class="nav-list zoom" href="#page2">Skills</a>
+						<a id="education" class="nav-list zoom" href="#page3">Education</a>
+						<a id="contact" class="nav-list zoom" href="#page4">Contact</a>
+					</nav>
+				</div>
+				<div id="page1" class="page home">
+					<center>
+					<a  class="" href="index.html"><img class="logo" src="images/logo_small.png"/></a>
+					<h1>Hello, I'm</h1>
+					<span>Satabdee Mohapatra</span>						
+					</center>			
+				</div>
+				<div id="page2" class="page skills">
+					<center>
+						<div id="SkillBox">
+								<center><p class="pageHeading">My Skills</p></center>
+						  <div class="SkillBar">
+							<div id="Skill-HTML"> 
+							  <span class="Skill-Area ">HTML</span>
+							  <span class="PercentText ">100%</span>
+							</div>
+						  </div>
+						  
+						  <div class="SkillBar">
+							<div id="Skill-CSS">
+							  <span class="Skill-Area ">CSS/CSS3</span>
+							  <span class="PercentText ">70%</span>
+							</div>
+						  </div>
 
-    <div class="form-group">
-      <input type="text" ng-model="list.searchTerm" placeholder="search term" class="form-control">
-    </div>
-    <div class="form-group narrow-button">
-      <button class="btn btn-primary" ng-click="list.getMatchedMenuItems()">Narrow It Down For Me!</button>
-    </div>
-<!-- <ul class="pull-left">
-<li ng-repeat="item in list.found_Items">{{item.name}} = {{item.description}}</li>
-</ul> -->
-    <!-- found-items should be implemented as a component -->
-    <found-items 
-	items="list.items"
-    on-remove="list.removeItem(index)""></found-items>
-  </div>
-
-</body>
+						  <div class="SkillBar">
+							<div id="Skill-jQuery">
+							  <span class="Skill-Area ">jQuery</span>
+							  <span class="PercentText ">40%</span>
+							</div>
+						  </div>
+						  
+						  <div class="SkillBar">
+							<div id="Skill-JS">
+							  <span class="Skill-Area ">Javascript</span>
+							  <span class="PercentText ">65%</span>
+							</div>
+						  </div>
+						  
+						  <div class="SkillBar">
+							<div id="Skill-XML">
+							  <span class="Skill-Area ">XML </span>
+							  <span class="PercentText ">40%</span>
+							</div>
+						  </div>
+						  
+							<div class="SkillBar">
+							<div id="Skill-C">
+							  <span class="Skill-Area ">PL/SQL</span>
+							  <span class="PercentText ">50%</span>
+							</div>
+						  </div>
+						  
+							<div class="SkillBar">
+							<div id="Skill-JAVA">
+							  <span class="Skill-Area ">C++</span>
+							  <span class="PercentText ">25%</span>
+							</div>
+						  </div>
+						  
+						</div>
+					</center>
+				</div>
+				<div id="page3" class="page education">
+					<center>
+						<p class="pageHeading">Education</p>
+						<!-- <div class="leftedge"></div>-->
+					</center>
+					<div class="timelineWrapper">
+						<div class="timeline">
+							<div class="timelineBlock block1">
+								<div id="tContent">
+									<h3>JNV Balasore</h3>
+									<p>lorem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdfyt fdsytv fdstysf.</p>
+								</div>
+								<div class="timelineImg">
+									<div class="icon"></div>
+								</div><span class="date">till 2009</span>
+							</div>
+							<div class="timelineBlock block2">
+								<div id="tContent">
+									<h3>IISc Bangalore</h3>
+									<h5>Research Assistant</h5>
+									<p>lorem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdfyt fdsytv fdstysf.</p>
+								</div>
+								<div class="timelineImg"><div class="icon"></div>
+								</div><span class="date">May 2013 - jul 2013</span>
+							</div>
+							<div class="timelineBlock block3">
+								<div id="tContent">
+									<h3>NIT Rourkela</h3>
+									<p>lorem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdfyt fdsytv fdstysf.</p>
+								</div>
+								<div class="timelineImg"><div class="icon"></div>
+								</div><span class="date">Jun 2010 - May 2014</span>
+							</div>
+							<div class="timelineBlock block4">
+								<div id="tContent">
+									<h3>TCS Kolkata</h3>
+									<h5>Client: <strong>CitiBank</strong></h5>
+									<p>lorem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdfyt fdsytv fdstysf.</p>
+								</div>
+								<div class="timelineImg"><div class="icon"></div>
+								</div><span class="date">Jun 2014 - Dec 2015</span>
+							</div>
+							<div class="timelineBlock block5">
+								<div id="tContent">
+									<h3>TCS Kolkata</h3>
+									<h5>Client: <strong>Kingfisher IT services</strong></h5>
+									<p>lorem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdforem ipseum dolar kdfjh dhghgfd dhgftd gdfyt fdsytv fdstysf.</p>
+								</div>
+								<div class="timelineImg"><div class="icon"></div>
+								</div><span class="date">Jan 2015 - Present</span>
+							</div>
+						</div>
+						<i class="down-arrow"></i>
+					</div>
+				</div>
+				<div id="page4" class="page contact">
+					<div class="contactWrapper">
+					<center><p class="pageHeading">Get In Touch</p></center>
+						<div id="contactFormDiv">
+							<form id="contactForm" action="" method="post">
+								<fieldset>
+									<legend>Send me a meesage</legend>
+									<div class="row">
+									<span class="the_label"><label for="name">Name</label></span>
+									<span class="input_area"><input type="text" size="33" value="Your name" class="required valid" name="name"></span>
+									</div>
+									<div class="row">
+									<span class="the_label"><label for="email">E-Mail</label></span>
+									<span class="input_area"><input type="text" size="33" value="Your email address" class="required" name="email"></span>
+									</div>
+									<div class="row">
+									<span class="the_label"><label for="phone">Phone</label></span>
+									<span class="input_area"><input type="text" size="33" value="" class="required" name="phone"></span>
+									</div>
+									<div class="row">
+									<span class="the_label"><label for="company">Company</label></span>
+									<span class="input_area"><input type="text" size="33" value="" class="required" name="company"></span>
+									</div>
+									 
+									<div class="row">
+									<span class="the_label"><label for="message">Message</label></span>
+									<span class="input_area_message">
+										<textarea rows="8" cols="28" value="Message for me." class="required" name="message"></textarea>
+									</span>
+									</div>
+									
+									<div class="submit"><input type="submit" src="images/contact_submit_btn.jpg" value="send" name="submit"></div>
+														
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="footer" class="page">
+						<div class="footerWrapper">
+							<center>
+							<a href="#page1">
+							<div id="goToTop"><i class="icon-up-open">^</i></div>
+							</a>
+							<ul class="soc">
+								<li class="soc-item">
+									<a href="mailto:satabdee.mohapatra@gmail.com" target="_blank" class="icon email" title="email"><img src="images/icons/email.svg" alt="email"></a>
+								</li>
+								<li class="soc-item">
+									<a href="https://twitter.com/Msatabdee" target="_blank" class="icon twitter" title="twitter"><img src="images/icons/twitter.svg" alt="twitter"></a>
+								</li>
+								<li class="soc-item">
+									<a href="https://instagram.com/bchiang7" target="_blank" class="icon instagram" title="instagram"><img src="images/icons/instagram.svg" alt="instagram"></a>
+								</li>
+								<!-- <li class="soc-item">
+									<a href="http://codepen.io/bchiang7" target="_blank" class="icon codepen" title="codepen"><img src="images/icons/codepen.svg" alt="codepen"></a>
+								</li> -->
+								<li class="soc-item">
+									<a href="https://github.com/Msatabdee/" target="_blank" class="icon github" title="github"><img src="images/icons/github.svg" alt="github"></a>
+								</li>
+								<li class="soc-item">
+									<a href="https://in.linkedin.com/in/satabdee-mohapatra-990188105" target="_blank" class="icon linkedin" title="linkedin"><img src="images/icons/linkedin.svg" alt="linkedin"></a>
+								</li>
+							</ul>
+							<div class="copyrightWrapper center">
+								<p>©&nbsp;&nbsp;Satabdee Mohapatra 2017</p>
+							</div>
+							</center>
+							
+						</div>
+				</div>
+			</div>
+							
+		</div>
+ 
+ <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+	</body>
 </html>
